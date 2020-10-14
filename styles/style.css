@@ -1,0 +1,16 @@
+nav {
+  display: flex;
+}
+
+footer {
+  border: solid green 1px;
+}
+
+footer .social-media {
+  background-color: gray;
+}
+
+footer .social-media img {
+  width: 1.65rem;
+}
+/*# sourceMappingURL=style.css.map */

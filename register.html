@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.svg">
+  <title>Register</title>
+</head>
+
+<body>
+
+    <form method="POST" class="sign-up">
+        <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+        <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+        <input type="text" id="email" name="fname" placeholder="Email Address"><br>
+
+        <div class="gender">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label>
+        </div>
+
+        <input type="password" id="lname" name="lname" placeholder="Password"><br>
+        <label for="user-info">Description</label>
+        <textarea maxlength="200" name="text" id="user-info" cols="30" rows="10"></textarea>
+
+        <ol>
+            <li><input type="checkbox" id="" name=""> I agree to <a href="#">terms of service</a></li>
+            <li><input type="checkbox" id="" name=""> Subscribe to newsletter</li>
+            <li><input type="checkbox" id="" name=""> I allow to process my personal data</li>
+        </ol>
+
+        <button type="reset" class="reset-btn">Clear form</button>
+        <button type="submit" class="signup-btn">Sign up</button>
+    </form>
+    
+  
+</body>
+</html>
