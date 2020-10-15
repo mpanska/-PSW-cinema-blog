@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="keywords" content="web page, index, HTML5, cinema, journal, online, film, blog, company, news">
+  <meta name="description" content="DM journal is an online magazine that provides articles about cinematography worldwide. 
+    New articles about films, actors, production and many other topics are added everyday"> 
   <link rel="stylesheet" href="/styles/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.svg">
   <title>Register</title>
@@ -11,11 +14,15 @@
 <body>
 
     <form method="POST" class="sign-up">
-        <input type="text" id="fname" name="fname" placeholder="First Name"><br>
-        <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
-        <input type="email" id="email" name="email" placeholder="Email Address"><br>
-
+        <div class="inputs">
+            <input type="text" id="fname" name="fname" placeholder="First Name"><br>
+            <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
+            <input type="email" id="email" name="email" placeholder="Email Address"><br>
+            <input type="password" id="password" name="password" placeholder="Password"><br>
+        </div>
+        
         <div class="gender">
+            <p>Choose your gender:</p>
             <input type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label><br>
             <input type="radio" id="female" name="gender" value="female">
@@ -24,15 +31,30 @@
             <label for="other">Other</label>
         </div>
 
-        <input type="password" id="lname" name="lname" placeholder="Password"><br>
-        <label for="user-info">Description</label>
-        <textarea maxlength="200" name="text" id="user-info" cols="30" rows="10"></textarea>
+        <label for="birth-date">Date od birth</label>
+        <input type="date" id="birth-date"><br>
+
+        <label for="user-info">Profile description</label>
+        <textarea maxlength="200" name="text" id="user-info" cols="30" rows="10" placeholder="Tell us somthing about You (max length: 200 charcters)"></textarea>
 
         <ol>
-            <li><input type="checkbox" id="" name=""> I agree to <a href="#">terms of service</a></li>
-            <li><input type="checkbox" id="" name=""> Subscribe to newsletter</li>
-            <li><input type="checkbox" id="" name=""> I allow to process my personal data</li>
+            <li><input type="checkbox" id="agree-box" name="agreement"> I agree to <a href="/doc/Terms_of_service.doc" download>terms of service</a></li>
+            <li><input type="checkbox" id="subscribe-box" name="agreement"> Subscribe to newsletter</li>
+            <li>
+                <input type="checkbox" id="allow-box" name="agreement"> I allow to process my personal data
+                <ul>
+                    <li>Your data will be processed for the purpose and in accordance with the terms of service.</li>
+                    <li>We will maintain the Security Measures. </li>
+                </ul>
+            </li>
         </ol>
+
+        <label for="find-us">How did You find us?</label>
+        <select name="select" id="find-us">
+            <option value="from a friend">Heared from a friend</option>
+            <option value="by searching">By searching about films</option>
+            <option value="from ad">From ad</option>
+        </select><br>
 
         <button type="reset" class="reset-btn">Clear form</button>
         <button type="submit" class="signup-btn">Sign up</button>
