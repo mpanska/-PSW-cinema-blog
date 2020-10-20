@@ -13,12 +13,13 @@
 
 <body>
 
-    <form method="POST" class="sign-up">
-        <div class="inputs">
-            <input type="text" id="fname" name="fname" placeholder="First Name"><br>
-            <input type="text" id="lname" name="lname" placeholder="Last Name"><br>
-            <input type="email" id="email" name="email" placeholder="Email Address"><br>
-            <input type="password" id="password" name="password" placeholder="Password"><br>
+    <form method="POST" class="sign-up" autocomplete="on">
+        <div class="text-inputs">
+            <input type="text" id="fname" name="fname" placeholder="First Name" autofocus><br>
+            <input type="text" id="lname" name="lname" placeholder="Last Name" required><br>
+            <input type="email" id="email" name="email" placeholder="Email Address" required><br>
+            <input type="password" id="password" name="password" placeholder="Password" required><br>
+            <input type="tel" id="phone" name="phone" placeholder="(123) 123-1231" pattern="\(\d{3}\) +\d{3}-\d{4}"><br>
         </div>
         
         <div class="gender">
@@ -31,17 +32,36 @@
             <label for="other">Other</label>
         </div>
 
-        <label for="birth-date">Date od birth</label>
-        <input type="date" id="birth-date"><br>
+        <!-- <label for="birth-date">Date od birth</label>
+        <input type="date" id="birth-date"><br> -->
+
+        <input type = "text" id = "txtList" placeholder = "Select a month of bitrh" list = "months" />
+        <datalist id = "months">
+            <option value = "January">
+            <option value = "February">
+            <option value = "March">
+            <option value = "April">
+            <option value = "May">
+            <option value = "June">
+            <option value = "July">
+            <option value = "August">
+            <option value = "September">
+            <option value = "October">
+            <option value = "November">
+            <option value = "December">
+        </datalist><br>
 
         <label for="user-info">Profile description</label>
         <textarea maxlength="200" name="text" id="user-info" cols="30" rows="10" placeholder="Tell us somthing about You (max length: 200 charcters)"></textarea>
 
         <ol>
-            <li><input type="checkbox" id="agree-box" name="agreement"> I agree to <a href="/doc/Terms_of_service.doc" download>terms of service</a></li>
-            <li><input type="checkbox" id="subscribe-box" name="agreement"> Subscribe to newsletter</li>
             <li>
-                <input type="checkbox" id="allow-box" name="agreement"> I allow to process my personal data
+                <input type="checkbox" id="agree-box" name="agreement" value="agree" required> 
+                I agree to <a href="/doc/Terms_of_service.doc" download>terms of service</a>
+            </li>
+            <li><input type="checkbox" id="subscribe-box" name="agreement" vlaue="subscribe"> Subscribe to newsletter</li>
+            <li>
+                <input type="checkbox" id="allow-box" name="agreement" value="allow" required> I allow to process my personal data
                 <ul>
                     <li>Your data will be processed for the purpose and in accordance with the terms of service.</li>
                     <li>We will maintain the Security Measures. </li>
