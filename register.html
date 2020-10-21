@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <meta name="keywords" content="web page, index, HTML5, cinema, journal, online, film, blog, company, news">
-  <meta name="description" content="DM journal is an online magazine that provides articles about cinematography worldwide. 
-    New articles about films, actors, production and many other topics are added everyday"> 
-  <link rel="stylesheet" href="/styles/style.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.svg">
-  <title>Registrarion</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="web page, index, HTML5, cinema, journal, online, film, blog, company, news">
+    <meta name="description" content="DM journal is an online magazine that provides articles about cinematography worldwide. 
+    New articles about films, actors, production and many other topics are added everyday">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.svg">
+    <title>Registrarion</title>
 </head>
 
 <body>
@@ -32,14 +33,14 @@
                 <input type="password" id="password" name="password" placeholder="Password" required maxlength="15">
                 (Maximum length: 15 characters)<br>
             </label>
-            
+
             <label for="tel">
                 <input type="tel" id="tel" name="tel" placeholder="(123) 123-1231" pattern="\(\d{3}\) +\d{3}-\d{4}">
                 ((###) ###-####)<br>
             </label>
-            
+
         </div>
-        
+
         <div class="gender">
             <p>Choose your gender:</p>
             <input type="radio" id="male" name="gender" value="male">
@@ -53,8 +54,8 @@
         <!-- <label for="birth-date">Date od birth</label>
         <input type="date" id="birth-date"><br> -->
 
-        <input type = "text" id = "txtList" placeholder = "Select a month of bitrh" list = "months" />
-        <datalist id = "months">
+        <input type="text" id="txtList" placeholder="Select a month of bitrh" list="months" />
+        <datalist id="months">
             <option value = "January">
             <option value = "February">
             <option value = "March">
@@ -69,11 +70,10 @@
             <option value = "December">
         </datalist><br>
 
-        
+
         <ol>
             <li>
-                <input type="checkbox" id="agree-box" name="agreement" value="agree" required> 
-                I agree to <a href="/doc/Terms_of_service.doc" download>terms of service</a>
+                <input type="checkbox" id="agree-box" name="agreement" value="agree" required> I agree to <a href="/doc/Terms_of_service.doc" download>terms of service</a>
             </li>
             <li><input type="checkbox" id="subscribe-box" name="agreement" vlaue="subscribe"> Subscribe to newsletter</li>
             <li>
@@ -95,7 +95,8 @@
         <button type="reset" class="reset-btn">Clear form</button>
         <button type="submit" class="signup-btn">Sign up</button>
     </form>
-    
-  
+
+
 </body>
+
 </html>
