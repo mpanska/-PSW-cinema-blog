@@ -5,3 +5,14 @@ footer .social-media {
 footer .social-media img {
   width: 26px;
 }
+
+aside {
+  background: #a7dba4;
+  padding: 10px;
+  width: 150px;
+  float: right;
+}
+
+article .article-text{
+  margin-right: 200px;
+}

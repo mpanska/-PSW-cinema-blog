@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="keywords" content="web page, index, HTML5, cinema, journal, online, film, blog, company, news">
+  <meta name="description" content="DM journal is an online magazine that provides articles about cinematography worldwide. 
+    New articles about films, actors, production and many other topics are added everyday"> 
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.svg">
+  <title>Registrarion</title>
+</head>
+
+<body>
+
+    <h3>Almost done!</h3>
+    <p>
+        Thank You for registration!
+        Now You can fill some additional information.
+    </p>
+
+    <form autocomplete="on" action="index.html">
+
+        <label for="user-info">Profile description:<br></label>
+        <textarea maxlength="200" name="text" id="user-info" cols="30" rows="10" placeholder="Tell us somthing about You (max length: 200 charcters)"></textarea><br>
+
+        <label for="month">Month of birth:
+            <input id="month" type="month"> (yyyy-mm)<br>
+        </label>
+
+        <label for="color">Your favourite color:
+            <input id="color" type="color"><br>
+        </label>
+
+        <label for="range"> Я не знаю че тут писать: <br>
+            0 <input id="renge" type="range" min = "0" max = "20" value = "10"> 20<br>
+        </label>
+
+        <label for="search">Search:
+            <input id="search" type="search" placeholder = "Search query"><br>
+        </label>
+
+        <label for="url">Your website:
+            <input id="url" type="url" placeholder = "http://www.domainname.com" >(http://www.domainname.com)<br>
+        </label>
+        
+
+        <button type="submit" class="signup-btn">Finish registration</button>
+    </form>
+
+
+</body>
+</html>
