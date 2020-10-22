@@ -6,10 +6,14 @@ footer .social-media img {
   width: 26px;
 }
 
+table, th, td{
+  border: 1px solid black;
+}
+
 aside {
   background: #a7dba4;
   padding: 10px;
-  width: 150px;
+  width: 250px;
   float: right;
 }
 
