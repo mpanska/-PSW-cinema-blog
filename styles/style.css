@@ -1,22 +1,134 @@
-footer .social-media {
-  background-color: gray;
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2em;
+  margin: 0;
+  background-color: #fff6d7;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+a {
+  text-decoration: none;
+  color: firebrick;
+}
+
+a :visited {
+  color: sandybrown;
+}
+
+a :hover {
+  color: #ffb561;
+  transition: 0.4s ease-in-out;
+}
+
+table, th, td {
+  border-width: 2px;
+  border-color: firebrick;
+  border-style: double;
+}
+
+main {
+  margin: 40px;
+}
+
+.blogpost .blogpost-img img {
+  width: 730px;
+}
+
+.blogpost p {
+  font-style: italic;
+}
+
+footer {
+  background-color: #ffb561;
 }
 
 footer .social-media img {
   width: 26px;
 }
 
-table, th, td{
-  border: 1px solid black;
+nav {
+  background-color: white;
+  padding: 6px;
+  font-size: 14pt;
 }
 
-aside {
-  background: #a7dba4;
-  padding: 10px;
-  width: 250px;
-  float: right;
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
 }
 
-article .article-text{
-  margin-right: 200px;
+.logo-home {
+  width: 50px;
+  position: absolute;
+  left: 40px;
+  top: 12px;
 }
+
+.banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #e9e9e9 url("/images/banner.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
+  padding: 50px;
+}
+
+.banner__head {
+  text-align: center;
+}
+
+.banner__article {
+  text-align: center;
+}
+
+.banner__article article {
+  font-size: 120%;
+}
+
+#sign-in-body {
+  background-image: url("/images/signin.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#sign-in-body #sign-in-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 6px;
+  padding: 40px;
+  margin: 15%;
+}
+
+#sign-in-body #sign-in-form :not(:last-child) {
+  margin-bottom: 10px;
+}
+
+#sign-in-body #sign-in-form .sign-in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sign-in-body #sign-in-form .sign-in .signin-btn {
+  padding: 5px 10px;
+  font-weight: 600;
+}
+
+#sign-in-body #sign-in-form .sign-in .form-field {
+  width: 180%;
+  height: 40px;
+  font-weight: 600;
+}
+/*# sourceMappingURL=style.css.map */

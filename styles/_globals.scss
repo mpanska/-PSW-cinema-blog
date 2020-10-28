@@ -1,0 +1,54 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    margin: 0;
+
+    background-color:#fff6d7;;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+a{
+    text-decoration: none;
+    color: firebrick;
+
+    :visited{
+        color: sandybrown;
+    }
+
+    :hover{
+        color: rgb(255, 181, 97);
+        transition: 0.4s ease-in-out;
+    }
+}
+
+
+table, th, td{
+    border-width: 2px;
+    border-color: firebrick;
+    border-style: double;
+}
+
+main{
+    margin: 40px;
+}
+
+.blogpost{
+    .blogpost-img{
+        img{
+            width: 730px;
+        }
+    }
+
+    p{
+        font-style: italic;
+    }
+}
+
+
+
+  
+  

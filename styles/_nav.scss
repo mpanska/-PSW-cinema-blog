@@ -1,0 +1,18 @@
+nav{
+    background-color: white;
+    padding: 6px;
+    font-size: 14pt;
+
+    ul{
+        display: flex;
+        list-style: none;
+        justify-content: space-evenly;
+    }
+}
+
+.logo-home{
+    width: 50px;
+    position: absolute;
+    left: 40px;
+    top: 12px;
+}

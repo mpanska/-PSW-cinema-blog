@@ -7,11 +7,14 @@
   <meta name="description" content="DM journal is an online magazine that provides articles about cinematography worldwide. 
     New articles about films, actors, production and many other topics are added everyday"> 
   <link rel="stylesheet" href="/styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.svg">
   <title>Home</title>
 </head>
 
 <body>
+
+  <img class="logo-home" src="/images/logo-home.png" alt="home page logo">
 
   <nav>
     <ul>
@@ -31,43 +34,48 @@
   </nav>
 
   <div class="banner">
-    <h1>DM journal</h1>
-    <p>
-      Welcome to our page! Here you can find all movies that you promise yourself to watch someday. New articles about your favorite movies and actors everyday!
-    </p>
+
+    <div class="banner__head">
+      <h1>DM journal</h1>
+      <p>
+       Welcome to our page! Here you can find all movies that you promise yourself to watch someday. New articles about your favorite movies and actors everyday!
+      </p>
+    </div>
+    
+    <div class="banner__article">
+      <article>
+        <h2>Get To Know Us Better</h2>
+        
+        <section>
+          <h3>Who are we?</h3>
+          <p>
+            We are an independent journal created in 2017
+          </p>
+        </section>
+  
+        <section>
+          <h3>How this all started?</h3>
+          <p>
+            Okay. Once upon a time there were two people obssesed with movies. 
+            And they realized that they want to share their love and knowledge with all the world. 
+            So they started to make their own blog about nowadays movies!
+          </p>
+        </section>
+    
+        <section>
+          <h3>What have I just watched?!</h3>
+          <p>
+            The big problem of the film industry is that they make films "community oriented". It means for everybody. 
+            But sometimes we can see on the screen somethind we can't understand. We call it smart movies. 
+            If you became a victim of a smart movie, don't beshy, come here and read what director actually wanted to say.
+          </p>
+        </section>
+      </article>
+    </div>
   </div>
 
-  <article>
-    <h2>Get To Know Us Better</h2>
-    <section>
-      <h3>Who are we?</h3>
-      <p>
-        We are an independent journal created in 2017
-      </p>
-    </section>
-
-    <section>
-      <h3>How this all started?</h3>
-      <p>
-        Okay. Once upon a time there were two people obssesed with movies. 
-        And they realized that they want to share their love and knowledge with all the world. 
-        So they started to make their own blog about nowadays movies!
-      </p>
-    </section>
-
-    <section>
-      <h3>What have I just watched?!</h3>
-      <p>
-        The big problem of the film industry is that they make films "community oriented". It means for everybody. 
-        But sometimes we can see on the screen somethind we can't understand. We call it smart movies. 
-        If you became a victim of a smart movie, don't beshy, come here and read what director actually wanted to say.
-      </p>
-    </section>
-
-  </article>
-
   
-  <div class="news">
+  <main>
     <h2>Newest articles</h2>
     <div class="blogpost">
       <a href="blogpost1.html">
@@ -78,16 +86,18 @@
       </div>
       <p>What do you know about Viscount Tewkesbury besides his passion for botany? Read here.</p>
     </div>
+
     <div class="blogpost">
       <a href="blogpost2.html">
         <h3>What's on the screen this week?</h3>
       </a>
       <div class="blogpost-img">
-        <a href="blogpost2.html"><img width="730" src="/images/cinema.jpg" alt="cinema"></a>
+        <a href="blogpost2.html"><img src="/images/cinema.jpg" alt="cinema"></a>
       </div>
       <p>All new movies of this week here. Our opinion.</p>
     </div> 
-  </div> 
+  </main> 
+
 
   <footer>
     <div class="footer-text" id="contact">Contact us:</div>
@@ -102,5 +112,6 @@
 
     <div class="footer-text"><strong>&copy;2020 DM journal</strong></div>
   </footer> 
+
 </body>
 </html>

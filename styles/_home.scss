@@ -1,0 +1,28 @@
+.banner{
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: rgb(233, 233, 233) url("/images/banner.jpg") ;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-blend-mode: overlay;
+
+    padding: 50px;
+
+    &__head{
+        text-align: center;
+    }
+
+    &__article{
+        text-align: center;
+
+        article{
+            font-size: 120%;
+        }
+    }
+}

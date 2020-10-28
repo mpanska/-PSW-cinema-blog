@@ -1,0 +1,43 @@
+#sign-in-body{
+    background-image: url("/images/signin.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    #sign-in-form{
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: whitesmoke;
+        border-radius: 6px;
+
+        padding: 40px;
+        margin: 15%;
+
+        :not(:last-child){
+            margin-bottom: 10px;
+        }
+
+        .sign-in{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .signin-btn{
+                padding: 5px 10px;
+                font-weight: 600;
+            }
+
+            .form-field{
+                width: 180%;
+                height: 40px;
+
+                font-weight: 600;
+            }
+
+        }
+
+    }
+
+}
