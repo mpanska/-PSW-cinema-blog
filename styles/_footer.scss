@@ -1,9 +1,21 @@
 footer{
     background-color: rgb(255, 181, 97);
 
+    padding: 20px;
+
+    #copyright{
+        text-align: center;
+    }
+
     .social-media{
         img {
             width: 26px;
+        }
+    }
+
+    a{
+        &:hover{
+            color: white;
         }
     }
 }

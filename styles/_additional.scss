@@ -1,0 +1,23 @@
+#additional-body{
+    background: rgb(233, 233, 233) url("/images/additional.jpg");
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+
+    margin: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        :not(:first-child){
+            margin-bottom: 40px;
+        }
+        
+    }
+}

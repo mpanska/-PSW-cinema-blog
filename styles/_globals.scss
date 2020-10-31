@@ -1,8 +1,7 @@
 body{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2em;
+    font-size: 1em;
     margin: 0;
-
     background-color:#fff6d7;;
 }
 
@@ -13,23 +12,71 @@ p{
 
 a{
     text-decoration: none;
-    color: firebrick;
+    color: $red;
 
-    :visited{
-        color: sandybrown;
+    &:link{
+        color: $red;
+    }
+    
+    &:hover{
+        color: $orange;
+        transition: 0.4s ease-in-out;
     }
 
-    :hover{
-        color: rgb(255, 181, 97);
-        transition: 0.4s ease-in-out;
+    &:active{
+        text-decoration: underline;
     }
 }
 
 
-table, th, td{
+button{
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 10px;
+    border: 1px solid $orange;
+
+    &:hover{
+        transition: 0.4s ease-in-out;
+        background-color: $orange;
+        color: white;
+    }
+}
+
+#tab1{
     border-width: 2px;
-    border-color: firebrick;
+    border-color: $red;
     border-style: double;
+    th{
+        border-width: 2px;
+        border-color: $red;
+        border-style: double;
+    }
+    td{
+        border-width: 2px;
+        border-color: $red;
+        border-style: double;
+    }
+
+    margin-bottom: 20px;
+}
+
+
+#tab2{
+    border-width: 5px;
+    border-color: $orange;
+    border-style: dotted;
+    th{
+        border-width: 2px;
+        border-color: $red;
+        border-style: dashed;
+    }
+    td{
+        border-width: 2px;
+        border-color: $red;
+        border-style: hidden;
+    }
+
+    margin-bottom: 20px;
 }
 
 main{
@@ -48,6 +95,22 @@ main{
     }
 }
 
+@media print {
+    p.bodyText {
+        font-family:'Times New Roman', Times, serif;
+    }
+    nav{
+        display: none;
+    }
+    .logo-home{
+        display: none;
+    }
+}
+
+
+:target {
+    border: 3px solid $red;
+}
 
 
   

@@ -2,12 +2,29 @@ nav{
     background-color: white;
     padding: 6px;
     font-size: 14pt;
+    
+    display: block;
+
+    @include breakpoint-down(small){
+        margin-top: 0;
+    }
+
+    :hover{
+        color: $orange;
+        transition: ease-in-out 0.4s;
+    }
 
     ul{
         display: flex;
         list-style: none;
         justify-content: space-evenly;
+
+        @include breakpoint-down(small){
+            flex-direction: column;
+            align-items: center; 
+        }
     }
+
 }
 
 .logo-home{
@@ -15,4 +32,52 @@ nav{
     position: absolute;
     left: 40px;
     top: 12px;
+    
+    @include breakpoint-down(small){
+        position: static;
+        padding-left: 50%;
+    }
+}
+
+
+#dropdown-menu{
+    background-color: $orange;
+    color: $red;
+    padding: 10px 10px 10px 40px;
+    transition: 0.5s ease-in-out;
+
+    ul{
+        display: none;
+    }
+
+
+    
+    &:hover{
+        color: white;
+        ul{
+            transition: 0.5s ease-in-out;
+            display: flex;
+            justify-content: space-evenly;
+
+            ul{
+                display: none;
+            }
+
+            li{
+                &:hover{
+                    ul{
+                        display: block;
+
+                    }
+                    
+                }
+            }
+            
+            a{
+                &:hover{
+                    color:white;
+                }
+            }
+        }
+    }
 }

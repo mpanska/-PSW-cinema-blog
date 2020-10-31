@@ -12,47 +12,44 @@
   <title>Registrarion</title>
 </head>
 
-<body>
+<body id="register-body">
 
     <form id="sign-up" autocomplete="on" action="register-additional.html">
         <div class="text-inputs">
             <label for="fname">
                 <input type="text" id="fname" name="fname" placeholder="First Name" autofocus>
-                (Jan)<br>
+                <span class="example">(Jan)</span><br>
             </label>
             <label for="lname"> 
                 <input type="text" id="lname" name="lname" placeholder="Last Name" required>
-                (Kowalski)<br>
+                <span class="example">(Kowalski)</span><br>
             </label>
             <label for="email">
                 <input type="email" id="email" name="email" placeholder="Email Address" required>
-                (name@domain.com)<br>
+                <span class="example">(name@domain.com)</span><br>
             </label>
 
             <label for="password">
                 <input type="password" id="password" name="password" placeholder="Password" required maxlength="15">
-                (Maximum length: 15 characters)<br>
+                <span class="example">(Maximum length: 15 characters)</span><br>
             </label>
             
             <label for="tel">
                 <input type="tel" id="tel" name="tel" placeholder="(123) 123-1231" pattern="\(\d{3}\) +\d{3}-\d{4}">
-                ((###) ###-####)<br>
+                <span class="example">((###) ###-####)</span><br>
             </label>
             
         </div>
         
         <div class="gender">
             <p>Choose your gender:</p>
-            <input type="radio" id="male" name="gender" value="male">
+            <input class="radio" type="radio" id="male" name="gender" value="male">
             <label for="male">Male</label><br>
-            <input type="radio" id="female" name="gender" value="female">
+            <input class="radio" type="radio" id="female" name="gender" value="female">
             <label for="female">Female</label><br>
-            <input type="radio" id="other" name="gender" value="other">
+            <input class="radio" type="radio" id="other" name="gender" value="other">
             <label for="other">Other</label>
         </div>
-
-        <!-- <label for="birth-date">Date od birth</label>
-        <input type="date" id="birth-date"><br> -->
 
         <input type = "text" id = "txtList" placeholder = "Select a month of bitrh" list = "months" />
         <datalist id = "months">
@@ -97,8 +94,11 @@
             <option value="from ad">From ad</option>
         </select><br>
 
-        <button type="reset" class="reset-btn">Clear form</button>
-        <button type="submit" class="signup-btn">Sign up</button>
+        <div class="buttons">
+            <button type="reset" class="reset-btn">Clear form</button>
+            <button type="submit" class="signup-btn">Sign up</button>
+        </div>
+        
     </form>
     
   

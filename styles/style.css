@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2em;
+  font-size: 1em;
   margin: 0;
   background-color: #fff6d7;
 }
@@ -15,19 +15,68 @@ a {
   color: firebrick;
 }
 
-a :visited {
-  color: sandybrown;
+a:link {
+  color: firebrick;
 }
 
-a :hover {
-  color: #ffb561;
+a:hover {
+  color: #ee9750;
   transition: 0.4s ease-in-out;
 }
 
-table, th, td {
+a:active {
+  text-decoration: underline;
+}
+
+button {
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 10px;
+  border: 1px solid #ee9750;
+}
+
+button:hover {
+  transition: 0.4s ease-in-out;
+  background-color: #ee9750;
+  color: white;
+}
+
+#tab1 {
   border-width: 2px;
   border-color: firebrick;
   border-style: double;
+  margin-bottom: 20px;
+}
+
+#tab1 th {
+  border-width: 2px;
+  border-color: firebrick;
+  border-style: double;
+}
+
+#tab1 td {
+  border-width: 2px;
+  border-color: firebrick;
+  border-style: double;
+}
+
+#tab2 {
+  border-width: 5px;
+  border-color: #ee9750;
+  border-style: dotted;
+  margin-bottom: 20px;
+}
+
+#tab2 th {
+  border-width: 2px;
+  border-color: firebrick;
+  border-style: dashed;
+}
+
+#tab2 td {
+  border-width: 2px;
+  border-color: firebrick;
+  border-style: hidden;
 }
 
 main {
@@ -42,18 +91,38 @@ main {
   font-style: italic;
 }
 
-footer {
-  background-color: #ffb561;
+@media print {
+  p.bodyText {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  nav {
+    display: none;
+  }
+  .logo-home {
+    display: none;
+  }
 }
 
-footer .social-media img {
-  width: 26px;
+:target {
+  border: 3px solid firebrick;
 }
 
 nav {
   background-color: white;
   padding: 6px;
   font-size: 14pt;
+  display: block;
+}
+
+@media (max-width: 39.9375em) {
+  nav {
+    margin-top: 0;
+  }
+}
+
+nav :hover {
+  color: #ee9750;
+  transition: ease-in-out 0.4s;
 }
 
 nav ul {
@@ -62,11 +131,58 @@ nav ul {
   justify-content: space-evenly;
 }
 
+@media (max-width: 39.9375em) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .logo-home {
   width: 50px;
   position: absolute;
   left: 40px;
   top: 12px;
+}
+
+@media (max-width: 39.9375em) {
+  .logo-home {
+    position: static;
+    padding-left: 50%;
+  }
+}
+
+#dropdown-menu {
+  background-color: #ee9750;
+  color: firebrick;
+  padding: 10px 10px 10px 40px;
+  transition: 0.5s ease-in-out;
+}
+
+#dropdown-menu ul {
+  display: none;
+}
+
+#dropdown-menu:hover {
+  color: white;
+}
+
+#dropdown-menu:hover ul {
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#dropdown-menu:hover ul ul {
+  display: none;
+}
+
+#dropdown-menu:hover ul li:hover ul {
+  display: block;
+}
+
+#dropdown-menu:hover ul a:hover {
+  color: white;
 }
 
 .banner {
@@ -81,6 +197,12 @@ nav ul {
   background-position: center;
   background-blend-mode: overlay;
   padding: 50px;
+}
+
+@media (max-width: 39.9375em) {
+  .banner {
+    margin-top: 100px;
+  }
 }
 
 .banner__head {
@@ -130,5 +252,131 @@ nav ul {
   width: 180%;
   height: 40px;
   font-weight: 600;
+}
+
+#register-body {
+  background-image: url("/images/reg-img.jpg");
+  background-size: contain;
+  background-position: 234px 60px;
+}
+
+#sign-up {
+  background: #e9e9e9;
+  opacity: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 50px 100px 50px 100px;
+  border-radius: 6px;
+}
+
+#sign-up .text-inputs .example {
+  position: relative;
+  left: 20px;
+}
+
+#sign-up .text-inputs :required {
+  border: solid 1px red;
+}
+
+#sign-up .text-inputs input {
+  width: 20.5em;
+  height: 2.5em;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: 1px solid #ee9750;
+}
+
+#sign-up .gender {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#sign-up .gender :not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+#sign-up input[type='radio']:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #d1d3d1;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+#sign-up input[type='radio']:checked:after {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  top: -2px;
+  left: -1px;
+  position: relative;
+  background-color: #ee9750;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
+}
+
+#sign-up input[type='text']:focus {
+  background-color: #ee9750;
+}
+
+#sign-up input[type='password']:focus {
+  background-color: #ee9750;
+}
+
+#sign-up input[type='email']:focus {
+  background-color: #ee9750;
+}
+
+#sign-up input[type='tel']:focus {
+  background-color: #ee9750;
+}
+
+#additional-body {
+  background: #e9e9e9 url("/images/additional.jpg");
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#additional-body form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#additional-body form :not(:first-child) {
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #ffb561;
+  padding: 20px;
+}
+
+footer #copyright {
+  text-align: center;
+}
+
+footer .social-media img {
+  width: 26px;
+}
+
+footer a:hover {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

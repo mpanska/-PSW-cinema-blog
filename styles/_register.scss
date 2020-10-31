@@ -1,3 +1,91 @@
+#register-body{
+    background-image: url("/images/reg-img.jpg");
+    background-size: contain;
+    background-position: 234px 60px;
+}
+
 #sign-up{
     
+    background: rgb(233, 233, 233);
+    opacity: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 20px;
+    margin: 50px 100px 50px 100px;
+    border-radius: 6px;
+
+    .text-inputs{
+        .example{
+            position: relative;
+            left: 20px;
+        }
+
+        :required{
+            border: solid 1px red;
+        }
+
+        input{
+            width: 20.5em;
+            height: 2.5em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border: 1px solid $orange;
+        }         
+    }
+
+    .gender{
+        margin-bottom: 20px;
+        text-align: center;
+
+        :not(:last-of-type){
+            margin-bottom: 30px;
+        }
+    }
+
+    input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+    input[type='radio']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: $orange;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+    input[type='text']:focus {
+        background-color: $orange;
+    }
+    input[type='password']:focus {
+        background-color: $orange;
+    }
+    input[type='email']:focus {
+        background-color: $orange;
+    }
+    input[type='tel']:focus {
+        background-color: $orange;
+    }
+   
 }
+
