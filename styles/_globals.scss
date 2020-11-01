@@ -2,7 +2,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     margin: 0;
-    background-color:#fff6d7;;
+    background-color: $bg-yellow;
 }
 
 p{
@@ -37,7 +37,7 @@ button{
 
     &:hover{
         transition: 0.4s ease-in-out;
-        background-color: $orange;
+        background-color: rgba(238, 151, 80, 0.5);
         color: white;
     }
 }
