@@ -1,5 +1,4 @@
 .banner{
-
     height: 100vh;
     display: flex;
     align-items: center;
@@ -14,12 +13,17 @@
 
     padding: 50px;
 
+
     @include breakpoint-down(small){
-        margin-top: 100px;
+       margin-top: 100px;
     }
 
     &__head{
         text-align: center;
+
+        @include breakpoint-down(small){
+            margin-top: 0;
+        }
     }
 
     &__article{
@@ -29,9 +33,4 @@
             font-size: 120%;
         }
     }
-}
-
-
-#shadow{
-    text-shadow: -4px 4px 6px dimgrey;
 }

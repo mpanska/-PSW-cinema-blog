@@ -1,15 +1,28 @@
 footer{
     background-color: rgb(255, 181, 97);
-
     padding: 20px;
+
+    .footer-right-left{
+        display: flex;
+        justify-content: space-between;
+    }
 
     #copyright{
         text-align: center;
     }
 
     .social-media{
+        .footer-images{
+            margin-top: 10px;
+        }
+
         img {
             width: 26px;
+            transition: all 0.3s ease-in-out 0s;
+
+            &:hover{
+                transform: translateY(-0.3125rem);
+            }
         }
     }
 

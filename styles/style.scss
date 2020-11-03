@@ -1,9 +1,11 @@
 @import "variables";
-@import "globals";
 @import "mixins";
+@import "globals";
 @import "nav";
+@import "footer";
 @import "home";
+@import "blogposts";
 @import "signin";
 @import "register";
 @import "additional";
-@import "footer";
+

@@ -32,13 +32,16 @@ nav{
     position: absolute;
     left: 40px;
     top: 12px;
+    transition: transform .8s ease-in-out;  
+
+    &:hover{
+        transform:rotate(180deg);
+    }
     
     @include breakpoint-down(small){
-        position: static;
-        padding-left: 50%;
+        display: none;
     }
 }
-
 
 #dropdown-menu{
     background-color: $orange;
@@ -50,8 +53,6 @@ nav{
         display: none;
     }
 
-
-    
     &:hover{
         color: white;
         ul{
@@ -69,7 +70,7 @@ nav{
                         display: block;
 
                     }
-                    
+                   
                 }
             }
             

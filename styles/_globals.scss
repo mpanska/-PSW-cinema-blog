@@ -3,6 +3,14 @@ body{
     font-size: 1em;
     margin: 0;
     background-color: $bg-yellow;
+
+    @include breakpoint-down(small){
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 p{
@@ -29,6 +37,23 @@ a{
 }
 
 
+.anim-heading{
+    font-size: 32px;
+    transition: all 0.4s;
+    display: inline-block;
+    padding: 4px 24px 4px 0px;
+    color: firebrick;
+    border-radius: 8px;
+
+    &:hover{
+        padding: 4px 48px;
+        background: $orange;
+        color: white;
+    }
+
+}
+
+
 button{
     font-weight: 600;
     border-radius: 6px;
@@ -46,6 +71,8 @@ button{
     border-width: 2px;
     border-color: $red;
     border-style: double;
+    background: radial-gradient(center, yellow, red);
+
     th{
         border-width: 2px;
         border-color: $red;
@@ -65,6 +92,8 @@ button{
     border-width: 5px;
     border-color: $orange;
     border-style: dotted;
+
+    
     th{
         border-width: 2px;
         border-color: $red;
