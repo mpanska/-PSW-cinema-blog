@@ -9,6 +9,7 @@
 
     #skew-elem{
         transition: 1s;
+        
         &:hover{
             transform: skew(20deg);
         }
@@ -34,7 +35,7 @@
         -webkit-column-width: 150px;
         column-width: 150px;
     
-        // @include breakpoint-down(small){
+        // @include breakpoint-down(medium){
         //     -webkit-column-count: 2;
         //     -moz-column-count: 2;
         //     -o-column-count: 2;
@@ -72,17 +73,31 @@
 
 }
 
+#bloglist-main{
+    @include breakpoint-down(medium){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p, h3{
+            text-align: center;
+        }
+    }
+}
+
 
 .gradient{
     padding: 30px;
     background:  radial-gradient(#654ea3,#eaafc8);
+    background: -webkit-gradient(radial, to left, color-stop(#654ea3), color-stop(#eaafc8));
+    background: -moz-linear-gradient(#654ea3,#eaafc8);
 }
 
 #border-img{
     border: 10px solid transparent;
     padding: 15px;
     border-image-source: url("/images/border.png");  
-    border-image-slice: 30;
+    border-image-slice: 80 30;
 }
 
 #border-img-repeat{
@@ -94,10 +109,7 @@
 }
 
 
-
-
-#virus-post{
-
+#camera-post{
     .animated1{
         width: 70px;
         position: relative;
@@ -117,7 +129,6 @@
         50%{
             top: 150px; left: 300px;
         }
-      
         100%{
             top: 150px; left: -300px; 
         }
@@ -142,10 +153,6 @@
         flex-direction: column; 
         align-items: center;
     }
-
-
-    
-
 }
 
 
@@ -167,17 +174,14 @@
 
 
 
-
 .flexible-box{
     display: -webkit-box;
     display: box;
     -webkit-box-orient: horizontal;
     box-orient: horizontal;
-
     margin-left: 100px;
 
     p { 
-        //height: 250px; 
         overflow: hidden;
     }
 }
@@ -196,18 +200,14 @@
     }
 }
 
-.flexible-box > .box-item:nth-child(1){
-    background-color: $orange; 
-}
-.flexible-box > .box-item:nth-child(2){
-    background-color: $orange;
-}
-.flexible-box > .box-item:nth-child(3){
-    background-color: $orange;
-}
+
 .flexible-box > .box-item:nth-child(4){ 
     background-color: $orange;
     width: 300px;
+}
+
+.flexible-box > .box-item{
+   background-color: $orange; 
 }
 
 .flexible-box > .box-item:hover {
@@ -244,9 +244,6 @@
     } 
 }
     
-
-
-
 
 @media handheld and (max-width: 480px), screen and (max-device-width: 480px),screen and (max-width: 480px){
     .column-article {

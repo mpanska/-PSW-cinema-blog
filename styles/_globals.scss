@@ -2,37 +2,65 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     margin: 0;
-    background-color: $bg-yellow;
-
-    @include breakpoint-down(small){
-        margin: 0;
-        padding: 0;
-
-        display: flex;
-        flex-direction: column;
-    }
+    background-color:  hsla(47, 100%, 92%, 1);
 }
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../doc/montserrat-v15-latin-regular.eot'); 
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../doc/montserrat-v15-latin-regular.eot?#iefix') format('embedded-opentype'), 
+         url('../doc/montserrat-v15-latin-regular.woff2') format('woff2'), 
+         url('../doc/montserrat-v15-latin-regular.woff') format('woff'), 
+         url('../doc/montserrat-v15-latin-regular.ttf') format('truetype'), 
+         url('../doc/montserrat-v15-latin-regular.svg#Montserrat') format('svg');
+}
+
+aside {
+    background: linear-gradient(to left, #348f50, #56b4d3);
+    background: -webkit-gradient(linear, to left, color-stop(#348f50), color-stop(#56b4d3));
+    background: -moz-linear-gradient(to left, #348f50, #56b4d3);
+
+    padding: 10px;
+    width: 250px;
+    float: right;
+    font-variant: small-caps;
+  }
 
 img{
     width: 730px;
+    @include breakpoint-down(medium){
+        width: 90%;
+    }
 }
 
 p{
     font-size: 18px;
     line-height: 1.5em;
+
+    font-family: 'Montserrat';
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: $red;
 }
 
 a{
     text-decoration: none;
     color: $red;
 
-    &:link{
-        color: $red;
+    &:hover{
+        color: $orange;  
+        transition: 0.4s ease-in-out;
     }
     
-    &:hover{
-        color: $orange;
-        transition: 0.4s ease-in-out;
+    h3{
+        &:hover{
+            color: $orange;  
+            transition: 0.4s ease-in-out;
+        } 
     }
 
     &:active{
@@ -54,7 +82,6 @@ a{
         background: $orange;
         color: white;
     }
-
 }
 
 
@@ -75,7 +102,6 @@ button{
     border-width: 2px;
     border-color: $red;
     border-style: double;
-    background: radial-gradient(center, yellow, red);
 
     th{
         border-width: 2px;
@@ -96,8 +122,8 @@ button{
     border-width: 5px;
     border-color: $orange;
     border-style: dotted;
+    margin-bottom: 20px;
 
-    
     th{
         border-width: 2px;
         border-color: $red;
@@ -108,8 +134,6 @@ button{
         border-color: $red;
         border-style: hidden;
     }
-
-    margin-bottom: 20px;
 }
 
 main{
@@ -117,12 +141,6 @@ main{
 }
 
 .blogpost{
-    .blogpost-img{
-        img{
-            width: 730px;
-        }
-    }
-
     p{
         font-style: italic;
     }

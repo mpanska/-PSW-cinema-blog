@@ -2,25 +2,44 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   margin: 0;
-  background-color: rgba(255, 246, 214, 0.9);
+  background-color: #fff6d6;
 }
 
-@media (max-width: 39.9375em) {
-  body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-  }
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../doc/montserrat-v15-latin-regular.eot");
+  src: local("Montserrat Regular"), local("Montserrat-Regular"), url("../doc/montserrat-v15-latin-regular.eot?#iefix") format("embedded-opentype"), url("../doc/montserrat-v15-latin-regular.woff2") format("woff2"), url("../doc/montserrat-v15-latin-regular.woff") format("woff"), url("../doc/montserrat-v15-latin-regular.ttf") format("truetype"), url("../doc/montserrat-v15-latin-regular.svg#Montserrat") format("svg");
+}
+
+aside {
+  background: linear-gradient(to left, #348f50, #56b4d3);
+  background: -moz-linear-gradient(to left, #348f50, #56b4d3);
+  padding: 10px;
+  width: 250px;
+  float: right;
+  font-variant: small-caps;
 }
 
 img {
   width: 730px;
 }
 
+@media (max-width: 63.9375em) {
+  img {
+    width: 90%;
+  }
+}
+
 p {
   font-size: 18px;
   line-height: 1.5em;
+  font-family: 'Montserrat';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: firebrick;
 }
 
 a {
@@ -28,11 +47,12 @@ a {
   color: firebrick;
 }
 
-a:link {
-  color: firebrick;
+a:hover {
+  color: #ee9750;
+  transition: 0.4s ease-in-out;
 }
 
-a:hover {
+a h3:hover {
   color: #ee9750;
   transition: 0.4s ease-in-out;
 }
@@ -73,7 +93,6 @@ button:hover {
   border-width: 2px;
   border-color: firebrick;
   border-style: double;
-  background: radial-gradient(center, yellow, red);
   margin-bottom: 20px;
 }
 
@@ -112,10 +131,6 @@ main {
   margin: 40px;
 }
 
-.blogpost .blogpost-img img {
-  width: 730px;
-}
-
 .blogpost p {
   font-style: italic;
 }
@@ -134,15 +149,6 @@ main {
 
 :target {
   border: 3px solid firebrick;
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-}
-
-p {
-  font-family: 'Montserrat';
 }
 
 nav {
@@ -181,7 +187,7 @@ nav ul {
   position: absolute;
   left: 40px;
   top: 12px;
-  transition: transform .8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
 
 .logo-home:hover {
@@ -247,7 +253,7 @@ footer .social-media .footer-images {
 
 footer .social-media img {
   width: 26px;
-  transition: all 0.3s ease-in-out 0s;
+  transition: 0.3s ease-in-out 0s;
 }
 
 footer .social-media img:hover {
@@ -272,6 +278,10 @@ footer a:hover {
   padding: 50px;
 }
 
+.banner h1, .banner h2, .banner h3 {
+  color: black;
+}
+
 @media (max-width: 39.9375em) {
   .banner {
     margin-top: 100px;
@@ -294,6 +304,20 @@ footer a:hover {
 
 .banner__article article {
   font-size: 120%;
+}
+
+@media (max-width: 63.9375em) {
+  #home-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #home-main p, #home-main h3 {
+    text-align: center;
+  }
+  #home-main img {
+    width: 90%;
+  }
 }
 
 #blogpost1 {
@@ -324,16 +348,29 @@ footer a:hover {
   column-width: 150px;
 }
 
+@media (max-width: 63.9375em) {
+  #bloglist-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #bloglist-main p, #bloglist-main h3 {
+    text-align: center;
+  }
+}
+
 .gradient {
   padding: 30px;
   background: radial-gradient(#654ea3, #eaafc8);
+  background: -webkit-gradient(radial, to left, color-stop(#654ea3), color-stop(#eaafc8));
+  background: -moz-linear-gradient(#654ea3, #eaafc8);
 }
 
 #border-img {
   border: 10px solid transparent;
   padding: 15px;
   border-image-source: url("/images/border.png");
-  border-image-slice: 30;
+  border-image-slice: 80 30;
 }
 
 #border-img-repeat {
@@ -344,13 +381,13 @@ footer a:hover {
   border-image-repeat: repeat;
 }
 
-#virus-post .animated1 {
+#camera-post .animated1 {
   width: 70px;
   position: relative;
   animation: imgMove1 4s infinite ease-in-out;
 }
 
-#virus-post .animated2 {
+#camera-post .animated2 {
   width: 70px;
   position: relative;
   animation: imgMove2 4s infinite ease-in-out;
@@ -386,7 +423,7 @@ footer a:hover {
   }
 }
 
-#virus-post .intro {
+#camera-post .intro {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -433,21 +470,13 @@ footer a:hover {
   width: 250px;
 }
 
-.flexible-box > .box-item:nth-child(1) {
-  background-color: #ee9750;
-}
-
-.flexible-box > .box-item:nth-child(2) {
-  background-color: #ee9750;
-}
-
-.flexible-box > .box-item:nth-child(3) {
-  background-color: #ee9750;
-}
-
 .flexible-box > .box-item:nth-child(4) {
   background-color: #ee9750;
   width: 300px;
+}
+
+.flexible-box > .box-item {
+  background-color: #ee9750;
 }
 
 .flexible-box > .box-item:hover {
@@ -497,7 +526,7 @@ footer a:hover {
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
   .column-article {
     column-count: 2;
-    column-gap: 30px;
+    column-gap: 20px;
     column-rule: 1px outset black;
   }
 }
