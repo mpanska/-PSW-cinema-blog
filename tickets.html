@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="web page, index, HTML5, cinema, journal, online, film, blog, company, news">
+  <meta name="description" content="DM journal is an online magazine that provides articles about cinematography worldwide. 
+    New articles about films, actors, production and many other topics are added everyday"> 
+  <link rel="stylesheet" href="/styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.svg">
+  <title>Win tickets</title>
+</head>
+
+<body>
+
+  <img class="logo-home" src="/images/logo-home.png" alt="home page logo">
+  <nav>
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="blogs.html">Blogs</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+      </li>
+        <li>
+            <a href="sign_in.html">Sign in</a>
+        </li>
+    </ul>
+  </nav>
+
+  <main>
+        <div class="heading">
+            <h2>Solve this quiz to have a chance to participate in our tickets raffle</h2>
+            <h4>But hyrry up, the amount is limited!</h4>
+        </div>
+
+        <button id="bgnBtn" onclick="start_quiz()" >Start Game</button>
+
+        <div id="quiz" style="display: none;">
+            <div class="gender">
+                <p>Choose a film You want to win a ticket for:</p>
+                <input class="radio" type="radio" id="opt1" name="quiz1" value="opt1">
+                <label for="male">Enola Holmes</label><br>
+                <input class="radio" type="radio" id="opt2" name="quiz1" value="opt2">
+                <label for="female">The Nest</label><br>
+                <input class="radio" type="radio" id="opt3" name="quiz1" value="opt3">
+                <label for="other">Tenet</label>
+            </div>
+
+            <button id="bgnBtn" onclick="math_mistery()">Click me for math mistery</button><br>
+            <button id="finish" onclick="end_quiz()">Finish quiz</button>
+        </div>
+
+
+        
+        
+  </main>
+  
+
+ 
+  <footer>
+    <div class="footer-right-left">
+      <div class="contact">
+        <div class="footer-text" id="contact">Contact us:</div>
+        <a href="mailto:margaryta.panska@gmail.com">ouraddress@gmail.com</a>
+      </div>
+
+      <div class="social-media">
+        <div id="soc-media" class="footer-text">Our social media</div>
+          <div class="footer-images">
+            <a href="https://www.facebook.com/"><img src="/images/logo-facebook.svg" alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img src="/images/logo-instagram.svg" alt="instagram"></a>
+            <a href="https://www.twitter.com/"><img src="/images/logo-twitter.svg" alt="twitter"></a>
+          </div>
+      </div>
+    </div>
+
+    <div id="copyright" class="footer-text"><strong>&copy;2020 DM journal</strong></div>
+  </footer> 
+
+  <script type="text/javascript" src="/scripts/math.js"></script>
+  <!-- <script>
+    
+    document.writeln( "<table>" );
+   
+    for ( var i = 1; i <= 7; i++ )
+    {
+    document.writeln( "<tr>" );
+   
+   for ( var j = 1; j <= 5; j++ )
+    document.writeln( "<td>(" + i + ", " + j + ")</td>" );
+   
+    document.writeln( "</tr>" );
+    } // end for
+   
+    document.writeln( "</table>" );
+   
+    </script> -->
+</body>
+</html>

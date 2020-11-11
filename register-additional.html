@@ -15,10 +15,7 @@
 <body id="additional-body">
 
     <h3>Almost done!</h3>
-    <p>
-        Thank You for registration!
-        Now You can fill some additional information.
-    </p>
+    <p>Now You can fill some additional information.</p>
 
     <form autocomplete="on" action="index.html">
 
@@ -45,9 +42,11 @@
             <input id="url" type="url" placeholder = "http://www.domainname.com" >(http://www.domainname.com)<br>
         </label>
         
-        <button type="submit" class="signup-btn">Finish registration</button>
+        <button type="submit" id="additional-btn" class="signup-btn" onclick="thank_you()">Finish registration</button>
     </form>
 
+    
 
+    <script type="text/javascript" src="/scripts/welcome.js"></script>
 </body>
 </html>

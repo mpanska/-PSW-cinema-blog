@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.svg">
   <title>Registrarion</title>
+  
 </head>
 
 <body id="register-body">
@@ -17,6 +18,7 @@
     <form id="sign-up" autocomplete="on" action="register-additional.html">
         <div class="text-inputs">
             <label for="fname">
+                <div id="name-error" class="error-text"></div>
                 <input type="text" id="fname" name="fname" placeholder="First Name" autofocus>
                 <span class="example">(Jan)</span><br>
             </label>
@@ -101,6 +103,6 @@
         
     </form>
     
-  
+    <script type="text/javascript" src="/scripts/form_check.js"></script>
 </body>
 </html>

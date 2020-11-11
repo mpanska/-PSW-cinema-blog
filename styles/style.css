@@ -5,6 +5,10 @@ body {
   background-color: #fff6d6;
 }
 
+.error-text {
+  color: red;
+}
+
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
@@ -526,7 +530,7 @@ footer a:hover {
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
   .column-article {
     column-count: 2;
-    column-gap: 20px;
+    column-gap: 30px;
     column-rule: 1px outset black;
   }
 }
