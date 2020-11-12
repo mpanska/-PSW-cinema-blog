@@ -33,12 +33,15 @@
   </nav>
 
   <main>
-        <div class="heading">
-            <h2>Solve this quiz to have a chance to participate in our tickets raffle</h2>
-            <h4>But hyrry up, the amount is limited!</h4>
-        </div>
 
-        <button id="bgnBtn" onclick="start_quiz()" >Start Game</button>
+    <img src="/images/tickets.jpg" alt="tickets">
+    <div class="heading">
+      <h2>Solve this quiz to have a chance to participate in our tickets raffle</h2>
+      <h3>We make raffles every Wednestay and Thursday!</h3>
+      <h4>But hyrry up, the amount is limited!</h4>
+    </div>
+
+    <button id="bgnBtn" onclick="start_quiz()" style="display: none;">Start Game</button><br>
 
         <div id="quiz" style="display: none;">
             <div class="gender">
@@ -55,9 +58,8 @@
             <button id="finish" onclick="end_quiz()">Finish quiz</button>
         </div>
 
-
-        
-        
+        <button id="raffle-btn" onclick="raffle_day()">Details</button><br>
+        <div id="divForUpdate"></div>
   </main>
   
 
@@ -83,22 +85,5 @@
   </footer> 
 
   <script type="text/javascript" src="/scripts/math.js"></script>
-  <!-- <script>
-    
-    document.writeln( "<table>" );
-   
-    for ( var i = 1; i <= 7; i++ )
-    {
-    document.writeln( "<tr>" );
-   
-   for ( var j = 1; j <= 5; j++ )
-    document.writeln( "<td>(" + i + ", " + j + ")</td>" );
-   
-    document.writeln( "</tr>" );
-    } // end for
-   
-    document.writeln( "</table>" );
-   
-    </script> -->
 </body>
 </html>

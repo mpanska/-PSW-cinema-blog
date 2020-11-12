@@ -1,23 +1,23 @@
-const form = document.getElementById('sign-up')
-const name = document.getElementById('fname')
-const lastName = document.getElementById('lname')
-const email = document.getElementById('email')
-const password = document.getElementById('password')
-const errorName = document.getElementById('name-error')
+const form = document.lementById("sign-up");
+const name = document.getElementById("fname");
+const lastName = document.getElementById("lname");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const errorName = document.getElementById("name-error");
 
 
-form.addEventListener('submit', (e) => {
+form.addEventListener("submit", (e) => {
 	if(!checkInputs())
-		e.preventDefault()
+		e.preventDefault();
 });
 
 function checkInputs(){
 	let message_name = [];
 	if (name.value === '' || name.value == null) {
-		message_name.push('Name is required');
+		message_name.push("Name is required");
 	}
 	else if(!isNaN(name.value) || !isNaN(lname.value)){
-		message_name.push('Name or last name cannot be a number');
+		message_name.push("Name or last name cannot be a number");
 	}
 
 	if (message_name.length > 0) {
@@ -26,7 +26,6 @@ function checkInputs(){
 	}
 	else
 		return true;
-	
 }
 
 
