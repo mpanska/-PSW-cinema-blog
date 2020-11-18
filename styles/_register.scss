@@ -87,6 +87,23 @@
     input[type='tel']:focus {
         background-color: $orange;
     }
+
+    input[type='text'] {
+        width: 500px;
+    }
+    input[type='password'] {
+        width: 500px;
+    }
+    input[type='email'] {
+        width: 500px;
+    }
+    input[type='tel'] {
+        width: 500px;
+    }
    
 }
 
+#helpText{
+    margin-bottom: 20px;
+    text-align: center;
+}

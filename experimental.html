@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="keywords" content="web page, index, HTML5, cinema, journal, online, film, blog, company, news">
+  <meta name="description" content="DM journal is an online magazine that provides articles about cinematography worldwide. 
+    New articles about films, actors, production and many other topics are added everyday"> 
+  <link rel="stylesheet" href="/styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.svg">
+  <title>Experimental</title>
+
+ 
+</head>
+
+<body id="overlay">
+    
+  <img class="logo-home" src="/images/logo-home.png" alt="home page logo">
+
+  <nav>
+    <ul>
+        <li>
+            <a href="index.html">Home</a>
+        </li>
+        <li>
+            <a href="blogs.html">Blogs</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+        <li>
+            <a href="sign_in.html">Sign in</a>
+        </li>
+    </ul>
+  </nav>
+  
+  
+  <main id="camera-post">
+    <div class="intro">
+        <img id='science-img' src="/images/features.jpg" alt="science">
+        <p>Let us help to test it. Have fun</p>
+
+        <p>Choose background color:</p>
+        <input type="color" id="colorpickerbutton" name="color" onChange="changeBgColor(this.value)">
+        <p>Choose text color:</p>
+        <input type="color" id="colorpickerbutton_text" name="color" onChange="changeTextColor(this.value)">
+
+        <p>Choose font:</p>
+        <select  name="select" id="font-list" onChange="changeFont(this)">
+            <option value="Arial">Arial</option> 
+            <option value="Times New Roman">Times New Roman</option> 
+            <option value="cursive">Cursive</option> 
+            <option value="Tahoma">Tahoma</option>
+            <option value="Impact">Impact</option>
+        </select><br>
+    </div>
+
+    
+  </main>
+  
+
+
+   
+  <footer>
+    <div class="footer-right-left">
+      <div class="contact">
+        <div class="footer-text" id="contact">Contact us:</div>
+        <a href="mailto:margaryta.panska@gmail.com">ouraddress@gmail.com</a>
+      </div>
+
+      <div class="social-media">
+        <div id="soc-media" class="footer-text">Our social media</div>
+          <div class="footer-images">
+            <a href="https://www.facebook.com/"><img src="/images/logo-facebook.svg" alt="facebook"></a>
+            <a href="https://www.instagram.com/"><img src="/images/logo-instagram.svg" alt="instagram"></a>
+            <a href="https://www.twitter.com/"><img src="/images/logo-twitter.svg" alt="twitter"></a>
+          </div>
+      </div>
+    </div>
+    <div id="copyright" class="footer-text"><strong>&copy;2020 DM journal</strong></div>
+  </footer> 
+
+  <script src = "scripts/labDOM/script_3.js"></script>
+</body>
+</html>

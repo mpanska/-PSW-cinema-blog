@@ -9,36 +9,41 @@
   <link rel="stylesheet" href="/styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.svg">
-  <title>Registrarion</title>
+  <title>Registration</title>
   
 </head>
 
 <body id="register-body">
 
     <form id="sign-up" autocomplete="on" action="register-additional.html">
+        
+
         <div class="text-inputs">
+            
+            <div id="helpText"></div>
+
             <label for="fname">
                 <div id="name-error" class="error-text"></div>
                 <input type="text" id="fname" name="fname" placeholder="First Name" autofocus>
-                <span class="example">(Jan)</span><br>
+                <br>
             </label>
             <label for="lname"> 
                 <input type="text" id="lname" name="lname" placeholder="Last Name" required>
-                <span class="example">(Kowalski)</span><br>
+                <br>
             </label>
             <label for="email">
                 <input type="email" id="email" name="email" placeholder="Email Address" required>
-                <span class="example">(name@domain.com)</span><br>
+                <br>
             </label>
 
             <label for="password">
                 <input type="password" id="password" name="password" placeholder="Password" required maxlength="15">
-                <span class="example">(Maximum length: 15 characters)</span><br>
+                <br>
             </label>
             
             <label for="tel">
                 <input type="tel" id="tel" name="tel" placeholder="(123) 123-1231" pattern="\(\d{3}\) +\d{3}-\d{4}">
-                <span class="example">((###) ###-####)</span><br>
+                <br>
             </label>
             
         </div>
@@ -97,13 +102,13 @@
         </select><br>
 
         <div class="buttons">
-            <button type="reset" class="reset-btn">Clear form</button>
-            <button type="submit" class="signup-btn">Sign up</button>
+            <button id="reset" type="reset" class="reset-btn">Clear form</button>
+            <button id="submit" type="submit" class="signup-btn">Sign up</button>
         </div>
         
     </form>
     
-    
+    <script type="text/javascript" src="/scripts/labDOM/script_5.js"></script>
     <script type="text/javascript" src="/scripts/form_check.js"></script>
 </body>
 </html>

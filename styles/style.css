@@ -670,6 +670,27 @@ footer a:hover {
   background-color: #ee9750;
 }
 
+#sign-up input[type='text'] {
+  width: 500px;
+}
+
+#sign-up input[type='password'] {
+  width: 500px;
+}
+
+#sign-up input[type='email'] {
+  width: 500px;
+}
+
+#sign-up input[type='tel'] {
+  width: 500px;
+}
+
+#helpText {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 #additional-body {
   background: #e9e9e9 url("/images/additional.jpg");
   background-size: cover;
